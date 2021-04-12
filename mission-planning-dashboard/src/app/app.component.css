@@ -1,4 +1,16 @@
 .box {
 display: flex;
 padding: 10px;
+border-style: groove;
+border-color: black;
+justify-content: center;
+background-color: bisque;
+
+}
+
+
+header{
+    text-align: center;
+    border-style: inset;
+    background-color: antiquewhite;
 }
