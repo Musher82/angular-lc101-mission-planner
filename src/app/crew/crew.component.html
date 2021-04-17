@@ -4,6 +4,7 @@
         <li *ngFor="let member of candidates" (click) = "addCrewMember(member)" [class.selected] ="crew.includes(member)">{{member.name}}</li>
     </ul>
 </div>
+<br>
 <hr>
 <div class="displayBox">
     <h3>Crew <span *ngIf = "crew.length === 3">Full</span></h3>
@@ -12,4 +13,6 @@
     </ol>
     <!-- Add an img tag here to display astronaut photos. -->
     <img *ngIf="selected" [src] = "selected.photo" />
+    <h3 *ngIf="selected">Favorite Food:</h3>
+    <span *ngIf= "selected">{{selected.favoriteFood}}</span>
 </div>
